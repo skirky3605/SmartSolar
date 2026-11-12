@@ -1,0 +1,83 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "C:\\Users\\skirky\\.ohos\\config\\default_hm_app_8XUP5pXhZVu9X9BsIUir2-1LtRDjf_6JjBk_SJ12CHs=.cer",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001ACEB575C38D0B3405C14E6C0E6EB76751DCD70EBB4DECAE51A26D3E17A8B4DCCC0BD546AD25CE",
+          "profile": "C:\\Users\\skirky\\.ohos\\config\\default_hm_app_8XUP5pXhZVu9X9BsIUir2-1LtRDjf_6JjBk_SJ12CHs=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "C:\\Users\\skirky\\.ohos\\config\\default_hm_app_8XUP5pXhZVu9X9BsIUir2-1LtRDjf_6JjBk_SJ12CHs=.p12",
+          "storePassword": "0000001AFD17C6E1E445F77935B27B5992FEB7607894DACD6738916A4FC45BBBBAADF2DA94778459FA6E"
+        }
+      }
+    ],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "targetSdkVersion": "26.0.0",
+        "compatibleSdkVersion": "6.1.1(24)",
+        "runtimeOS": "HarmonyOS",
+        "buildOption": {
+          "strictMode": {
+            "caseSensitiveCheck": true,
+            "useNormalizedOHMUrl": true
+          }
+        }
+      }
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug",
+      },
+      {
+        "name": "release"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "default",
+      "srcPath": "./products/default",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "common",
+      "srcPath": "./common",
+      "targets": [
+        {
+          "name": "default"
+        }
+      ]
+    },
+    {
+      "name": "adaptiveLayout",
+      "srcPath": "./features/adaptiveLayout",
+      "targets": [
+        {
+          "name": "default"
+        }
+      ]
+    },
+    {
+      "name": "responsiveLayout",
+      "srcPath": "./features/responsiveLayout",
+      "targets": [
+        {
+          "name": "default"
+        }
+      ]
+    }
+  ]
+}
