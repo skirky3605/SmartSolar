@@ -1,0 +1,22 @@
+# 构建产物
+build/
+install/
+*.o
+*.a
+*.so
+*.out
+
+# 第三方大文件(613MB,超过 GitHub 单文件限制,请在 README 说明如何获取)
+3rdparty/
+
+# 备份 / 临时文件
+*.bak
+*.swp
+*~
+1
+
+# 编辑器配置
+.vscode/
+
+# 日志
+*.log

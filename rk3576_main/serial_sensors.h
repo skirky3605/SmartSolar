@@ -3,7 +3,10 @@
 
 struct SensorData {
     int l1 = 0, l2 = 0, l3 = 0, l4 = 0;
-    double temperature = 0, humidity = 0, elevation = 90, azimuth = 90;
+    double temperature = 0.0, humidity = 0.0;
+    double elevation = 0.0, azimuth = 0.0;
+    bool tracking = false;
+    int dht = 0;
     bool valid = false;
 };
 
